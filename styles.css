@@ -1,0 +1,65 @@
+body {
+    background-color: powderblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+div {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+
+}
+
+#image-buttons {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card-icons {
+    width: 50px;
+    margin: 0 5px;
+    border-radius: 10px;
+    
+}
+.card-icons:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+input {
+    font-weight: inherit; 
+    font-family: inherit;
+    width: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: lavender;
+}
+
+.button {
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+    background-color: lavender;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button:hover {border: 1px solid black;}
+
+#result {
+    font-family: consolas;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: aliceblue;
+    height: 250px;
+    width: 50%;
+}
+
+#card-type{
+    background-color: #E6E6FA;
+}
