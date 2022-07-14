@@ -16,9 +16,9 @@
         
         <!-- buttons of cards -->
         <div id="image-buttons">
-            <img src="../img/visa.png" class="card-icons" onclick="select('visa')" alt="visa">
-            <img src="../img/mastercard.png" class="card-icons" onclick="select('mastercard') "alt="mastercard">
-            <img src="../img/amex.png" class="card-icons" onclick="select('amex') "alt="amex">
+            <img src="./img/visa.png" class="card-icons" onclick="select('visa')" alt="visa">
+            <img src="./img/mastercard.png" class="card-icons" onclick="select('mastercard') "alt="mastercard">
+            <img src="./img/amex.png" class="card-icons" onclick="select('amex') "alt="amex">
         </div>
 
         <!-- Number of cards to generate -->
@@ -26,7 +26,11 @@
         <input type="number" id="amount" /><br />
         <button class="button" onclick="make()">Generate</button>
     </div>
-    <div id="result"></div>
+    <div id="result">
+        <ul id="cardList">
+            <!-- Generated cards come here -->
+        </ul>
+    </div>
     <script src="main.js"></script>
 
     <script>     
@@ -47,7 +51,7 @@
                 let card = generate(cardType);
                 cardList += "<li>" + card + "</li>" + "<br>";
             }
-            document.getElementById("result").innerHTML = cardList;
+            document.getElementById("cardList").innerHTML = cardList;
         }
 
         function select(type) {

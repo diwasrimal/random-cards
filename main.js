@@ -8,7 +8,6 @@ function randCard(type) {
         "visa": {"firstDigit": 4, "length": [13,16]},
         "mastercard": {"firstDigit": 5, "length": [13]}
     }
-    
     // finding information based on card type
     let cardInfo = cardInfos[type]
     let len = cardInfo["length"]            // len is object
